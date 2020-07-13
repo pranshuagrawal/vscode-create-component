@@ -1,6 +1,8 @@
 # Create Component
 
-Create ReactJS, VueJS and React Native Components in less than 5 seconds.
+[![Build Status](https://api.travis-ci.org/pranshuagrawal/vscode-create-component.svg?branch=master)](https://travis-ci.org/github/pranshuagrawal/vscode-create-component)
+
+Create ReactJS, VueJS and React Native Components with advanced configuration in less than 5 seconds.
 
 # Features
   - Supports ReactJS, VueJS, React Native components.

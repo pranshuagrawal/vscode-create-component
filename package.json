@@ -31,6 +31,11 @@
 	"activationEvents": [
 		"onCommand:extension.createComponent"
 	],
+	"badges": [{
+		"description": "Build Status",
+		"href": "https://travis-ci.org/github/pranshuagrawal/vscode-create-component",
+		"url": "https://api.travis-ci.org/pranshuagrawal/vscode-create-component.svg?branch=master"
+	}],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
