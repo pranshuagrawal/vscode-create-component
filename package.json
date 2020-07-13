@@ -1,0 +1,78 @@
+{
+	"name": "create-component",
+	"displayName": "Create Component",
+	"author": {
+		"name": "Pranshu Agrawal",
+		"email": "pranshu.a.11@gmail.com",
+		"url": "https://pranshu.works"
+	},
+	"publisher": "PranshuAgrawal",
+	"description": "Create ReactJS, VueJS and React Native boilerplate components along with Test Cases and Storybook files in 5 seconds.",
+	"license": "MIT",
+	"icon": "images/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pranshuagrawal/vscode-create-component.git"
+	},
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"create react component",
+		"create component",
+		"reactjs",
+		"react native",
+		"vuejs"
+	],
+	"activationEvents": [
+		"onCommand:extension.createComponent"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.createComponent",
+				"title": "Create Component"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"when": "explorerResourceIsFolder",
+					"command": "extension.createComponent",
+					"group": "Hli@React"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js",
+		"deploy": "vsce publish"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.46.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"@typescript-eslint/parser": "^2.30.0",
+		"@typescript-eslint/eslint-plugin": "^2.30.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"@types/mustache": "^4.0.1",
+		"mustache": "^4.0.1"
+	}
+}
