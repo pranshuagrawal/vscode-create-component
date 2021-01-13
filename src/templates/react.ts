@@ -13,12 +13,14 @@ export default {{componentName}}
 import React, { Fragment } from 'react';
 import './styles/index{{StyleExtension}}';
 
-interface I{{componentName}}Props {
+interface {{componentName}}Props {
 
 }
 
-const {{componentName}}: React.SFC<I{{componentName}}Props> = (props) => {
-    return <Fragment></Fragment>;
+function {{componentName}}({}: {{componentName}}Props) {
+  return (
+  <div className="{{componentName}}"></div>
+  );
 }
 
 export default {{componentName}};
